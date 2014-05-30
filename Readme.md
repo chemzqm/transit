@@ -26,7 +26,7 @@ However, I suppose you use css animation to achieve such simple css animation, u
 
 Set animation with dom(s) and css properties.
 
-`props` could be `translateX` `translateY` `rorate` `skew` for shrten transform properties.
+`props` could be `translateX` `translateY` `rorate` `skew` for shorten transform properties.
 
 ### .add(el | els , props)
 
@@ -34,7 +34,7 @@ Add the same time-line animation with dom(s) and css properties.
 
 ### .ease([name])
 
-Ease function name, see [component/ease](https://github.com/component/ease).
+Ease function name, default `in-quad` (fast-slow) see [component/ease](https://github.com/component/ease).
 
 ### .duration([ms])
 
