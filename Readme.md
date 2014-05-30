@@ -2,6 +2,8 @@
 
 High performance javascript animation library with simplity in mind.
 
+Inspired by [Velocity.js](http://julian.com/research/velocity/), use that if you use jquery.
+
 ## Example
 
 Here is a simple slide in example.
