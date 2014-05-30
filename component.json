@@ -1,0 +1,26 @@
+{
+  "name": "transit",
+  "repository": "chemzqm/transit",
+  "description": "component for high performance javascript animation",
+  "version": "0.0.1",
+  "keywords": [],
+  "demo": "http://chemzqm.github.io/transit/",
+  "dependencies": {
+    "chemzqm/ismobile": "*",
+    "component/tween": "*"
+  },
+  "development": {
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "templates": [
+    
+  ],
+  "styles": [
+    
+  ]
+}
+
