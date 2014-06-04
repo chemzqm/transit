@@ -54,9 +54,13 @@ Delay animation in `ms` milisecond, default `0`.
 
 Reverse the animation.
 
+### .queue(name)
+
+Add the animation to queue with `name`.
+
 ### .css(props)
 
-Helper method for set default css properties before animation.
+Helper method for set default css properties before animation, using [chemzqm/style](https://github.com/chemzqm/style).
 
 ### .hide()
 

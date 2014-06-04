@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1"/>
+  <title>simple example of transit</title>
+  <style type="text/css" media="screen">
+    body {
+    }
+    .container {
+      max-width: 650px;
+      margin: 100px auto;
+    }
+    .container > div {
+      height: 100px;
+      width: 100px;
+      margin: 10px 0;
+      background-color: #FFDC00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="translate"></div>
+    <div id="rotate"></div>
+    <div id="scale"></div>
+    <div id="height"></div>
+  </div>
+  <script src="../build/build.js" type="text/javascript" charset="utf-8">
+  </script>
+  <script>
+    var transit = require('transit');
+    function $(id) {
+      return document.getElementById(id);
+    }
+    transit($('translate'), {
+      translateX: 200,
+      opacity: 0.2
+    })
+    .add($('rotate'), {
+      rotate: 360
+    })
+    .add($('scale'), {
+      scale: 0.3
+    })
+    .add($('height'), {
+      height: 200
+    })
+    .ease('in-quad')
+    .duration(2000)
+    .end()
+  </script>
+</body>
+</html>

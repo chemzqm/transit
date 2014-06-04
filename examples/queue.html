@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1"/>
+  <title>simple example of transit</title>
+  <style type="text/css" media="screen">
+    body {
+    }
+    .container {
+      max-width: 650px;
+      margin: 100px auto;
+    }
+    .container > div {
+      height: 100px;
+      width: 100px;
+      margin: 10px 0;
+      background-color: #FFDC00;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <script src="../build/build.js" type="text/javascript" charset="utf-8">
+  </script>
+  <script>
+    var transit = require('transit');
+    function $(id) {
+      return document.getElementById(id);
+    }
+    var divs = document.querySelectorAll('.container > div');
+
+    function slideIn(el) {
+      transit(el, {
+        opacity: 0.3,
+        translateX: 200
+      })
+      .queue('slidein')
+      .reverse()
+      .css({
+        display: 'block'
+      })
+      .end()
+    }
+
+    for (var i = 0; i < divs.length ; i++) {
+      slideIn(divs[i]);
+    }
+  </script>
+</body>
+</html>
