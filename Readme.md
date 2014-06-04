@@ -36,7 +36,7 @@ Add the same time-line animation with dom(s) and css properties.
 
 ### .ease([name])
 
-Ease function name, default `in-quad` (fast-slow) see [component/ease](https://github.com/component/ease).
+Ease function name, default `out-quad` (fast-slow) see [component/ease](https://github.com/component/ease).
 
 ### .duration([ms])
 
@@ -45,10 +45,6 @@ Duration of animation, default 300ms.
 ### .end([fn])
 
 **Must** be called to start animation with optional callback.
-
-### .loop([number])
-
-Loop the animation, default 0.
 
 ### .delay(ms)
 

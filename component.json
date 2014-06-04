@@ -7,6 +7,8 @@
   "demo": "http://chemzqm.github.io/transit/",
   "dependencies": {
     "chemzqm/ismobile": "*",
+    "chemzqm/style": "*",
+    "component/raf": "*",
     "component/tween": "*"
   },
   "development": {
