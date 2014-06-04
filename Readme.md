@@ -28,7 +28,7 @@ However, I suppose you use css animation to achieve such simple css animation, u
 
 Set animation with dom(s) and css properties.
 
-`props` could be `translateX` `translateY` `rorate` `skew` for shorten transform properties.
+`props` could be `translateX` `translateY` `rorate` `scale` `skew` for shorten transform properties.
 
 ### .add(el | els , props)
 
