@@ -3,6 +3,7 @@ var style = require('style');
 var raf = require('raf');
 var Tween = require('tween');
 var queues = require('./queue')
+var classes = require('classes');
 
 function assertNumbers(o) {
   Object.keys(o).forEach(function(key) {
@@ -57,6 +58,7 @@ Transit.prototype.queue = function (name) {
 Transit.prototype.start = function (cb) {
   if (this.map.length === 0) return cb ? cb() : null;
   var tweens = [];
+  var animate;
 
   var delay = this._delay || 0;
   setTimeout(function() {
@@ -66,7 +68,7 @@ Transit.prototype.start = function (cb) {
       tweens.push(tween);
     }.bind(this));
 
-    function animate() {
+    animate = function () {
       raf(animate);
       tweens.forEach(function(tween) {
         tween.update();
@@ -160,10 +162,10 @@ Transit.prototype.hide = function () {
     self.each(function(o) {
       var el = o.el;
       if (el.nodeType) {
-        el.classList.add('hide');
+        classes(el).add('hide');
       } else {
         for (var i = 0, len = el.length; i < len; i++) {
-          el[i].classList.add('hide');
+          classes(el[i]).add('hide');
         }
       }
     })
