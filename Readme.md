@@ -68,4 +68,4 @@ Helper method for hide all the el(s) when animation end.
 
 ### .disbleHA()
 
-Use this if you want to disable `mobile hardware acceleration`.
+By default `translateZ(0)` is added to transform css properity on mobile device, you can disable it if you find there's confilct.
