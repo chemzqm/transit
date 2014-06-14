@@ -8,6 +8,7 @@
   "dependencies": {
     "chemzqm/ismobile": "*",
     "chemzqm/style": "*",
+    "component/classes": "*",
     "component/raf": "*",
     "component/tween": "*"
   },
